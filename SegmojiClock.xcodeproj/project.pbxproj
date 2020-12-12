@@ -60,6 +60,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D5B5F6225851BAC0063ADEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8C81AA258466D100B6ACAB /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D5B5F6325851BBC0063ADEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D8C818C25845FF500B6ACAB /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D5B5F6425851BDF0063ADEE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3D8C818825845FF500B6ACAB /* AppDelegate.swift */,
+				3D8C818A25845FF500B6ACAB /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3D5B5F6525851BFB0063ADEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D8C818E25845FF700B6ACAB /* Assets.xcassets */,
+				3D8C819325845FF700B6ACAB /* LaunchScreen.storyboard */,
+				3D8C819625845FF700B6ACAB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		3D8C817C25845FF500B6ACAB = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +116,10 @@
 		3D8C818725845FF500B6ACAB /* SegmojiClock */ = {
 			isa = PBXGroup;
 			children = (
-				3D8C818825845FF500B6ACAB /* AppDelegate.swift */,
-				3D8C818A25845FF500B6ACAB /* SceneDelegate.swift */,
-				3D8C81AA258466D100B6ACAB /* Model.swift */,
-				3D8C818C25845FF500B6ACAB /* View.swift */,
-				3D8C818E25845FF700B6ACAB /* Assets.xcassets */,
-				3D8C819325845FF700B6ACAB /* LaunchScreen.storyboard */,
-				3D8C819625845FF700B6ACAB /* Info.plist */,
+				3D5B5F6525851BFB0063ADEE /* Resources */,
+				3D5B5F6225851BAC0063ADEE /* Model */,
+				3D5B5F6325851BBC0063ADEE /* View */,
+				3D5B5F6425851BDF0063ADEE /* Delegates */,
 				3D8C819025845FF700B6ACAB /* Preview Content */,
 			);
 			path = SegmojiClock;
