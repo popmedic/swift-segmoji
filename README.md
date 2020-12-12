@@ -1,2 +1,3 @@
-# swift-segmoji
+# swift-segmojiclock
+
 Seven Segment Clock with Emoji
