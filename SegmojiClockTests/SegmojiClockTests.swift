@@ -1,8 +1,7 @@
 //
-//  SegmojiClockTests.swift
 //  SegmojiClockTests
 //
-//  Created by Kevin Scardina on 12/11/20.
+//  Created on 12/11/20.
 //  Copyright © 2020 Kevin Scardina. All rights reserved.
 //
 

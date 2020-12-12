@@ -1,62 +1,11 @@
 //
 //  SegmojiClock
 //
-//  Created on 12/11/20.
+//  Created on 12/12/20.
 //  Copyright © 2020 Kevin Scardina. All rights reserved.
 //
 
 import Foundation
-import Combine
-
-class Clock: ObservableObject {
-    typealias TimeSegmented = (
-        SevenSegment,
-        SevenSegment,
-        SevenSegment,
-        SevenSegment,
-        SevenSegment,
-        SevenSegment
-    )
-    @Published
-    var time: TimeSegmented = (SevenSegment.blank,
-                               SevenSegment.blank,
-                               SevenSegment.blank,
-                               SevenSegment.blank,
-                               SevenSegment.blank,
-                               SevenSegment.blank)
-    
-    private let runQueue: DispatchQueue
-    private func getTime() -> TimeSegmented {
-        let hours = Calendar.current.component(.hour, from: Date())
-        let minutes = Calendar.current.component(.minute, from: Date())
-        let seconds = Calendar.current.component(.second, from: Date())
-        let segmented = { (_ int: Int) -> (SevenSegment, SevenSegment) in
-            (
-                SevenSegment.from(int / 10),
-                SevenSegment.from(int % 10)
-            )
-        }
-        let segmentedHours = segmented(hours)
-        let segmentedMinutes = segmented(minutes)
-        let segmentedSeconds = segmented(seconds)
-        return (
-            segmentedHours.0, segmentedHours.1,
-            segmentedMinutes.0, segmentedMinutes.1,
-            segmentedSeconds.0, segmentedSeconds.1
-        )
-    }
-    init() {
-        runQueue = DispatchQueue(label: "\(Self.self).runQueue")
-        fire()
-    }
-    private func fire() {
-        let time = getTime()
-        DispatchQueue.main.async { [weak self] in self?.time = time }
-        runQueue.asyncAfter(deadline: .now() + 1.0) { [weak self] in
-            self?.fire()
-        }
-    }
-}
 
 enum SevenSegment: String {
     case
@@ -185,19 +134,5 @@ enum SevenSegment: String {
         case 9: return .nine
         default: return .blank
         }
-    }
-}
-
-struct Emoji {
-    private static let ranges = [
-        0x1F600...0x1F636,
-        0x1F645...0x1F64F,
-        0x1F910...0x1F91E
-    ]
-    private static var randomRange: ClosedRange<Int> {
-        ranges[Int.random(in: 0..<ranges.count)]
-    }
-    static var random: String {
-        String(UnicodeScalar(Int.random(in: randomRange))!)
     }
 }

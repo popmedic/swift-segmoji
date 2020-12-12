@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3346FB25853C4200BAAEBD /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FA25853C4200BAAEBD /* Emoji.swift */; };
+		3D3346FD25853C6C00BAAEBD /* SevenSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FC25853C6C00BAAEBD /* SevenSegment.swift */; };
+		3D3346FF25853CA900BAAEBD /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FE25853CA900BAAEBD /* ClockView.swift */; };
 		3D8C818925845FF500B6ACAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C818825845FF500B6ACAB /* AppDelegate.swift */; };
 		3D8C818B25845FF500B6ACAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C818A25845FF500B6ACAB /* SceneDelegate.swift */; };
-		3D8C818D25845FF500B6ACAB /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C818C25845FF500B6ACAB /* View.swift */; };
+		3D8C818D25845FF500B6ACAB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C818C25845FF500B6ACAB /* RootView.swift */; };
 		3D8C818F25845FF700B6ACAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C818E25845FF700B6ACAB /* Assets.xcassets */; };
 		3D8C819225845FF700B6ACAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C819125845FF700B6ACAB /* Preview Assets.xcassets */; };
 		3D8C819525845FF700B6ACAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C819325845FF700B6ACAB /* LaunchScreen.storyboard */; };
 		3D8C81A025845FF700B6ACAB /* SegmojiClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C819F25845FF700B6ACAB /* SegmojiClockTests.swift */; };
-		3D8C81AB258466D100B6ACAB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C81AA258466D100B6ACAB /* Model.swift */; };
+		3D8C81AB258466D100B6ACAB /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C81AA258466D100B6ACAB /* Clock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D3346FA25853C4200BAAEBD /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		3D3346FC25853C6C00BAAEBD /* SevenSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegment.swift; sourceTree = "<group>"; };
+		3D3346FE25853CA900BAAEBD /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		3D8C818525845FF500B6ACAB /* SegmojiClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmojiClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8C818825845FF500B6ACAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8C818A25845FF500B6ACAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D8C818C25845FF500B6ACAB /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3D8C818C25845FF500B6ACAB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		3D8C818E25845FF700B6ACAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D8C819125845FF700B6ACAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D8C819425845FF700B6ACAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,7 +45,7 @@
 		3D8C819B25845FF700B6ACAB /* SegmojiClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmojiClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8C819F25845FF700B6ACAB /* SegmojiClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmojiClockTests.swift; sourceTree = "<group>"; };
 		3D8C81A125845FF700B6ACAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D8C81AA258466D100B6ACAB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3D8C81AA258466D100B6ACAB /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,9 @@
 		3D5B5F6225851BAC0063ADEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3D8C81AA258466D100B6ACAB /* Model.swift */,
+				3D8C81AA258466D100B6ACAB /* Clock.swift */,
+				3D3346FA25853C4200BAAEBD /* Emoji.swift */,
+				3D3346FC25853C6C00BAAEBD /* SevenSegment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -71,7 +79,8 @@
 		3D5B5F6325851BBC0063ADEE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3D8C818C25845FF500B6ACAB /* View.swift */,
+				3D8C818C25845FF500B6ACAB /* RootView.swift */,
+				3D3346FE25853CA900BAAEBD /* ClockView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,10 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3346FB25853C4200BAAEBD /* Emoji.swift in Sources */,
 				3D8C818925845FF500B6ACAB /* AppDelegate.swift in Sources */,
-				3D8C81AB258466D100B6ACAB /* Model.swift in Sources */,
+				3D8C81AB258466D100B6ACAB /* Clock.swift in Sources */,
 				3D8C818B25845FF500B6ACAB /* SceneDelegate.swift in Sources */,
-				3D8C818D25845FF500B6ACAB /* View.swift in Sources */,
+				3D3346FF25853CA900BAAEBD /* ClockView.swift in Sources */,
+				3D8C818D25845FF500B6ACAB /* RootView.swift in Sources */,
+				3D3346FD25853C6C00BAAEBD /* SevenSegment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
