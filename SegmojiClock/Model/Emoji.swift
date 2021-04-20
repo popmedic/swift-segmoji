@@ -20,4 +20,13 @@ struct Emoji {
     static var random: String {
         String(UnicodeScalar(Int.random(in: randomRange))!)
     }
+	static let numbers = [
+		"0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"
+	]
+	static let colon = ":"
+	static let blank = ""
+	static func from(_ int: Int) -> String {
+		guard 0...9 ~= int else { return blank }
+		return numbers[int]
+	}
 }

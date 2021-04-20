@@ -9,17 +9,19 @@ import SwiftUI
 
 struct RootView: View {
     var body: some View {
-        VStack {
-            Text("Segmoji Clock")
-                .foregroundColor(Color.white)
-                .padding(.top)
-                .font(Font.system(size: 24))
-            ClockView(backgroundColor: Color.black,
-                      fontName: "Menlo",
-                      fontSize: 10.0,
-                      showSeconds: false)
-        }
-        .background(Color.black)
+		ZStack {
+			Color.black
+			VStack {
+				Text("Segmoji Clock")
+					.foregroundColor(Color.white)
+					.padding(.top)
+					.font(Font.system(size: 24))
+				ClockView(fontName: "Menlo",
+						  fontSize: 16.0,
+						  showSeconds: false)
+			}
+			.background(Color.black)
+		}
     }
 }
 

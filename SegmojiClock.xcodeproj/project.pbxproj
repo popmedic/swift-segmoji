@@ -10,6 +10,15 @@
 		3D3346FB25853C4200BAAEBD /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FA25853C4200BAAEBD /* Emoji.swift */; };
 		3D3346FD25853C6C00BAAEBD /* SevenSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FC25853C6C00BAAEBD /* SevenSegment.swift */; };
 		3D3346FF25853CA900BAAEBD /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FE25853CA900BAAEBD /* ClockView.swift */; };
+		3D4568D825856EE400DCDFC9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4568D725856EE400DCDFC9 /* WidgetKit.framework */; };
+		3D4568DA25856EE400DCDFC9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4568D925856EE400DCDFC9 /* SwiftUI.framework */; };
+		3D4568DD25856EE400DCDFC9 /* SegmojiClockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4568DC25856EE400DCDFC9 /* SegmojiClockWidget.swift */; };
+		3D4568E025856EE800DCDFC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4568DF25856EE800DCDFC9 /* Assets.xcassets */; };
+		3D4568E225856EE800DCDFC9 /* SegmojiClockWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3D4568DE25856EE400DCDFC9 /* SegmojiClockWidget.intentdefinition */; };
+		3D4568E325856EE800DCDFC9 /* SegmojiClockWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3D4568DE25856EE400DCDFC9 /* SegmojiClockWidget.intentdefinition */; };
+		3D4568E625856EE800DCDFC9 /* SegmojiClockWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3D4568D525856EE300DCDFC9 /* SegmojiClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D4568FD25857CF800DCDFC9 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FA25853C4200BAAEBD /* Emoji.swift */; };
+		3D45690125857CFB00DCDFC9 /* SevenSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3346FC25853C6C00BAAEBD /* SevenSegment.swift */; };
 		3D8C818925845FF500B6ACAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C818825845FF500B6ACAB /* AppDelegate.swift */; };
 		3D8C818B25845FF500B6ACAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C818A25845FF500B6ACAB /* SceneDelegate.swift */; };
 		3D8C818D25845FF500B6ACAB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C818C25845FF500B6ACAB /* RootView.swift */; };
@@ -21,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3D4568E425856EE800DCDFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D8C817D25845FF500B6ACAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D4568D425856EE300DCDFC9;
+			remoteInfo = SegmojiClockWidgetExtension;
+		};
 		3D8C819C25845FF700B6ACAB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D8C817D25845FF500B6ACAB /* Project object */;
@@ -30,10 +46,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3D4568E725856EE800DCDFC9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3D4568E625856EE800DCDFC9 /* SegmojiClockWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3D3346FA25853C4200BAAEBD /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		3D3346FC25853C6C00BAAEBD /* SevenSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegment.swift; sourceTree = "<group>"; };
 		3D3346FE25853CA900BAAEBD /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		3D4568D525856EE300DCDFC9 /* SegmojiClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SegmojiClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4568D725856EE400DCDFC9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3D4568D925856EE400DCDFC9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3D4568DC25856EE400DCDFC9 /* SegmojiClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmojiClockWidget.swift; sourceTree = "<group>"; };
+		3D4568DE25856EE400DCDFC9 /* SegmojiClockWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SegmojiClockWidget.intentdefinition; sourceTree = "<group>"; };
+		3D4568DF25856EE800DCDFC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D4568E125856EE800DCDFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D8C818525845FF500B6ACAB /* SegmojiClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmojiClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8C818825845FF500B6ACAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8C818A25845FF500B6ACAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +86,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D4568D225856EE300DCDFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4568DA25856EE400DCDFC9 /* SwiftUI.framework in Frameworks */,
+				3D4568D825856EE400DCDFC9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D8C818225845FF500B6ACAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +112,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D4568D625856EE400DCDFC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D4568D725856EE400DCDFC9 /* WidgetKit.framework */,
+				3D4568D925856EE400DCDFC9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D4568DB25856EE400DCDFC9 /* SegmojiClockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3D4568DC25856EE400DCDFC9 /* SegmojiClockWidget.swift */,
+				3D4568DE25856EE400DCDFC9 /* SegmojiClockWidget.intentdefinition */,
+				3D4568DF25856EE800DCDFC9 /* Assets.xcassets */,
+				3D4568E125856EE800DCDFC9 /* Info.plist */,
+			);
+			path = SegmojiClockWidget;
+			sourceTree = "<group>";
+		};
 		3D5B5F6225851BAC0063ADEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				3D8C818725845FF500B6ACAB /* SegmojiClock */,
+				3D4568DB25856EE400DCDFC9 /* SegmojiClockWidget */,
 				3D8C819E25845FF700B6ACAB /* SegmojiClockTests */,
+				3D4568D625856EE400DCDFC9 /* Frameworks */,
 				3D8C818625845FF500B6ACAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +186,7 @@
 			children = (
 				3D8C818525845FF500B6ACAB /* SegmojiClock.app */,
 				3D8C819B25845FF700B6ACAB /* SegmojiClockTests.xctest */,
+				3D4568D525856EE300DCDFC9 /* SegmojiClockWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +223,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3D4568D425856EE300DCDFC9 /* SegmojiClockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D4568EA25856EE800DCDFC9 /* Build configuration list for PBXNativeTarget "SegmojiClockWidgetExtension" */;
+			buildPhases = (
+				3D4568D125856EE300DCDFC9 /* Sources */,
+				3D4568D225856EE300DCDFC9 /* Frameworks */,
+				3D4568D325856EE300DCDFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SegmojiClockWidgetExtension;
+			productName = SegmojiClockWidgetExtension;
+			productReference = 3D4568D525856EE300DCDFC9 /* SegmojiClockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3D8C818425845FF500B6ACAB /* SegmojiClock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D8C81A425845FF700B6ACAB /* Build configuration list for PBXNativeTarget "SegmojiClock" */;
@@ -161,10 +247,12 @@
 				3D8C818125845FF500B6ACAB /* Sources */,
 				3D8C818225845FF500B6ACAB /* Frameworks */,
 				3D8C818325845FF500B6ACAB /* Resources */,
+				3D4568E725856EE800DCDFC9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D4568E525856EE800DCDFC9 /* PBXTargetDependency */,
 			);
 			name = SegmojiClock;
 			productName = SegmojiClock;
@@ -195,10 +283,13 @@
 		3D8C817D25845FF500B6ACAB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Kevin Scardina";
 				TargetAttributes = {
+					3D4568D425856EE300DCDFC9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					3D8C818425845FF500B6ACAB = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -223,11 +314,20 @@
 			targets = (
 				3D8C818425845FF500B6ACAB /* SegmojiClock */,
 				3D8C819A25845FF700B6ACAB /* SegmojiClockTests */,
+				3D4568D425856EE300DCDFC9 /* SegmojiClockWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D4568D325856EE300DCDFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4568E025856EE800DCDFC9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D8C818325845FF500B6ACAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,12 +348,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D4568D125856EE300DCDFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4568FD25857CF800DCDFC9 /* Emoji.swift in Sources */,
+				3D4568E225856EE800DCDFC9 /* SegmojiClockWidget.intentdefinition in Sources */,
+				3D4568DD25856EE400DCDFC9 /* SegmojiClockWidget.swift in Sources */,
+				3D45690125857CFB00DCDFC9 /* SevenSegment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D8C818125845FF500B6ACAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3D3346FB25853C4200BAAEBD /* Emoji.swift in Sources */,
 				3D8C818925845FF500B6ACAB /* AppDelegate.swift in Sources */,
+				3D4568E325856EE800DCDFC9 /* SegmojiClockWidget.intentdefinition in Sources */,
 				3D8C81AB258466D100B6ACAB /* Clock.swift in Sources */,
 				3D8C818B25845FF500B6ACAB /* SceneDelegate.swift in Sources */,
 				3D3346FF25853CA900BAAEBD /* ClockView.swift in Sources */,
@@ -273,6 +385,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3D4568E525856EE800DCDFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D4568D425856EE300DCDFC9 /* SegmojiClockWidgetExtension */;
+			targetProxy = 3D4568E425856EE800DCDFC9 /* PBXContainerItemProxy */;
+		};
 		3D8C819D25845FF700B6ACAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3D8C818425845FF500B6ACAB /* SegmojiClock */;
@@ -292,6 +409,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3D4568E825856EE800DCDFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				INFOPLIST_FILE = SegmojiClockWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.SegmojiClock.SegmojiClockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D4568E925856EE800DCDFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9XNX575S2;
+				INFOPLIST_FILE = SegmojiClockWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.SegmojiClock.SegmojiClockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3D8C81A225845FF700B6ACAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -409,6 +572,7 @@
 		3D8C81A525845FF700B6ACAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SegmojiClock/Preview Content\"";
@@ -429,6 +593,7 @@
 		3D8C81A625845FF700B6ACAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SegmojiClock/Preview Content\"";
@@ -493,6 +658,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D4568EA25856EE800DCDFC9 /* Build configuration list for PBXNativeTarget "SegmojiClockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4568E825856EE800DCDFC9 /* Debug */,
+				3D4568E925856EE800DCDFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3D8C818025845FF500B6ACAB /* Build configuration list for PBXProject "SegmojiClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
